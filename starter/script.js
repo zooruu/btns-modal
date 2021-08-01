@@ -18,7 +18,9 @@ const showModal= function(){
 }
 
 closeModalBtn.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
 
 for ( let i = 0; i < showModalBtns.length; i++){
     showModalBtns[i].addEventListener('click', showModal);
 }
+
