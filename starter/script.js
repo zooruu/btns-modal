@@ -24,3 +24,12 @@ for ( let i = 0; i < showModalBtns.length; i++){
     showModalBtns[i].addEventListener('click', showModal);
 }
 
+
+ //Listen to keydown event
+document.addEventListener('keydown',function(e){
+    // console.log(e.key);
+    if(e.key === "Escape" && !modal.classList.contains("hidden") ){
+        closeModal();
+    }
+});
+
